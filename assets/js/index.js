@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", function(){
                                 // User //
     // User Set //
     
-    let user1 = new User(1, "Azu", "azurior24@gmail.com", "password", "Tony", "Gohin", "");
+    let user1 = new User(1, "Test", "test@gmail.com", "1234", "Marc", "Jhon", "");
     let user2 = new User(2, "Test", "test1@gmail.com", "1234", "Robert", "Jhon", "");
     let user3 = new User(3, "Test2", "test2@gmail.com", "1234", "Marie", "Jhon", "");
     
