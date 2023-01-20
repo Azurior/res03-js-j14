@@ -42,7 +42,7 @@ class User {
     }
     
     get password (){
-        return this.password;
+        return this.#password;
     }
     
     set password (password){
@@ -73,7 +73,26 @@ class User {
         this.#profileImage = profileImage;
     }
     
+    /*save (){
+        sessionStorage.setItem("users", this.toJSON());
+    }*/
+    
+    toJSON () {
 
+    let user = 
+        {
+            id : this.#id,
+            username : this.#username,
+            email : this.#email,
+            password : this.#password,
+            firstname : this.firstname,
+            lastname : this.#lastname,
+            profileImage : this.#profileImage
+        };
+
+    return JSON.stringify(user);
+    
+    }
 }
 
 export { User };
